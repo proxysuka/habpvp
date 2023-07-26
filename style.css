@@ -1,0 +1,43 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #03531b, #50bb45);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    animation: moveUpDown 2s infinite alternate; /* Reduz a duração da animação */
+}
+
+.logo-container img {
+    width: 30%;
+    height: auto;
+}
+
+/* Define a animação */
+@keyframes moveUpDown {
+    0% {
+        top: 0; /* Posição inicial da imagem */
+    }
+    100% {
+        top: 20px; /* Posição final da imagem (mude o valor conforme desejado) */
+    }
+}
+
+footer {
+    background-color: #333; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto no rodapé */
+    padding: 20px; /* Espaçamento interno do rodapé */
+    text-align: center; /* Alinha o conteúdo do rodapé à esquerda */
+    position: fixed; /* Define a posição fixa do rodapé */
+    bottom: 0; /* Alinha o rodapé na parte inferior da página */
+    width: 100%; /* Define a largura completa do rodapé */
+}
